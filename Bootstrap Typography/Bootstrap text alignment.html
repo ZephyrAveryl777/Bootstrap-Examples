@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Text Alignment</title>
+    <!-- BOOTSTRAP CSS CDN -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Some custom styles -->
+    <style>
+        body {
+            background: linear-gradient(to right, #efefbb, #d4d3dd);
+        }
+
+        .container {
+            background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+            border-radius: 45px;
+            padding: 35px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .bs-example {
+            width: 650px;
+            padding: 10px;
+            border: 1px solid rgb(22, 12, 12);
+            border-radius: 25px;
+            text-align: center;
+            margin-left: 270px;
+        }
+
+        .bd-highlight {
+            background-color: #ddaac2;
+            border: 2px solid #a31d1d;
+
+        }
+
+        h2 {
+            font-family: 'Dancing Script', 'cursive';
+            font-size: 45px;
+            text-align: center;
+        }
+
+        hr {
+            width: 50%;
+            background: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>
+            <span>
+                <h2>Bootstrap Text Alignment</h2>
+            </span>
+        </p>
+        <hr>
+        <div class="bs-example">
+            <p class="text-left">Left aligned text.</p>
+            <p class="text-center">Center aligned text.</p>
+            <p class="text-right">Right aligned text.</p>
+            <p class="text-justify">Justified text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem
+                tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.
+                Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet
+                sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in.</p>
+            <p class="text-nowrap bd-highlight" style="width: 10rem;">No wrap text. This text should overflow the
+                parent.</p>
+        </div>
+    </div>
+</body>
+
+</html>

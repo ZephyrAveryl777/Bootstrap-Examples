@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example of Bootstrap Three Column Grid Layouts for Tablets and Desktops</title>
+    <!-- BOOTSTRAP CSS CDN -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <style>
+        /* Some custom styles to beautify this example */
+        .container {
+            border: 2.5px dashed red;
+            border-block: initial;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            width: 100%;
+            border-radius: 45px;
+            background-color: #ffffff;
+        }
+
+        .demo-content {
+            padding: 60px;
+            font-size: 18px;
+            min-height: 300px;
+            background: #5fb0f3;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            border-radius: 35px;
+            text-align: center;
+
+
+        }
+
+        .demo-content.bg-alt {
+            background: #3cdcf1;
+        }
+
+        hr {
+            background-color: #0e0101;
+
+        }
+
+        h3,
+        h5 {
+            font-family: 'Dancing Script', 'cursive';
+            font-size: 35px;
+        }
+
+        h3 {
+            font-size: 40px;
+        }
+
+        .ribbon-highlight,
+        h3 {
+            position: relative;
+            margin: 0.1em;
+            text-align: center;
+
+        }
+
+        .ribbon-highlight::before {
+            content: " ";
+            z-index: -1.5;
+            left: 6em;
+            top: 2em;
+            border-width: 1.2em;
+            border-style: solid;
+            border-color: rgb(243, 138, 138);
+            position: absolute;
+            width: 830px;
+            border-left-color: transparent;
+            border-right-color: transparent;
+        }
+
+        span,
+        h5 {
+            background-color: #c0ffc8;
+            width: calc(50% + 8em);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <p>
+            <span class="ribbon-highlight">
+                <h3>Three Column Grid Layouts for Tablets and Desktops</h3>
+            </span>
+        </p>
+        <!--Row with three equal columns-->
+        <p>
+            <span>
+                <h5>Row with three equal columns</h5>
+            </span>
+        </p>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="demo-content">.col-sm-4</div>
+            </div>
+            <div class="col-sm-4">
+                <div class="demo-content bg-alt">.col-sm-4</div>
+            </div>
+            <div class="col-sm-4">
+                <div class="demo-content">.col-sm-4</div>
+            </div>
+        </div>
+        <hr>
+        <!--Row with three columns divided in 1:4:1 ratio-->
+        <p>
+            <span>
+                <h5>Row with three columns divided in 1:4:1 ratio</h5>
+            </span>
+        </p>
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="demo-content">.col-sm-2</div>
+            </div>
+            <div class="col-sm-8">
+                <div class="demo-content bg-alt">.col-sm-8</div>
+            </div>
+            <div class="col-sm-2">
+                <div class="demo-content">.col-sm-2</div>
+            </div>
+        </div>
+        <hr>
+        <!--Row with three columns divided unevenly-->
+        <p>
+            <span>
+                <h5>Row with three columns divided unevenly</h5>
+            </span>
+        </p>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="demo-content">.col-sm-3</div>
+            </div>
+            <div class="col-sm-7">
+                <div class="demo-content bg-alt">.col-sm-7</div>
+            </div>
+            <div class="col-sm-2">
+                <div class="demo-content">.col-sm-2</div>
+            </div>
+        </div>
+    </div>
+    <!-- BOOTSTRAP JavaScript CDN -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+
+</html>

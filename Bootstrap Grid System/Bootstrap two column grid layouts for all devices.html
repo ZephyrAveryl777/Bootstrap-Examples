@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of Bootstrap Two Column Grid Layouts for All Devices</title>
+    <!-- BOOTSTRAP CSS CDN -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Some custom styling -->
+    <style>
+        .demo-content {
+            padding: 10px;
+            font-size: 18px;
+            min-height: 350px;
+            background: #45b5ff;
+            margin-bottom: 10px;
+        }
+
+        .demo-content.bg-alt {
+            background: #4feaff;
+        }
+
+        h5,
+        h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 30px;
+        }
+
+        hr {
+            background-color: #3a2a2a;
+        }
+
+        .container {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            border: 2px dashed rgb(231, 14, 14);
+            border-radius: 40px;
+        }
+
+        .ribbon-highlight,
+        h3 {
+            position: relative;
+            margin: 0.1em;
+            text-align: center;
+
+        }
+
+        .ribbon-highlight::before {
+            content: " ";
+            z-index: -1;
+            left: 13.5em;
+            top: 2.2em;
+            border-width: 1.2em;
+            border-style: solid;
+            border-color: rgb(101, 245, 238);
+            position: absolute;
+            width: 510px;
+            border-left-color: transparent;
+            border-right-color: transparent;
+        }
+
+        .highlight-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .highlight-container::before {
+            content: " ";
+            display: block;
+            height: 25px;
+            width: 450px;
+            margin-left: 3px;
+            margin-right: 3px;
+            position: absolute;
+            background: rgb(253, 168, 147);
+            transform: rotate(2deg);
+            top: 40px;
+            left: -1px;
+            z-index: -1;
+            border-radius: 20% 25% 20% 24%;
+            padding: 10px 3px 3px 10px;
+            border-left-color: transparent;
+            border-right-color: transparent;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <p> <span class="ribbon-highlight">
+                <h3>Two Column Grid Layouts for All Devices</h3>
+            </span></p>
+
+        <!-- Row with two equal columns -->
+        <p>
+            <span class="highlight-container">
+                <h5>Row with two equal columns</h5>
+            </span>
+        </p>
+
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="demo-content">.col-xl-6 --first</div>
+            </div>
+            <div class="col-xl-6">
+                <div class="demo-content bg-alt">.col-xl-6 --second</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--Row with two columns divided in 2:1 ratio  -->
+        <p>
+            <span class="highlight-container">
+                <h5>Row with two columns divided in 2:1 ratio </h5>
+            </span>
+        </p>
+        <div class="row">
+            <div class="col-xl-8">
+                <div class="demo-content bg-alt">.col-xl-8 --ratio: 2X </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="demo-content">.col-xl-4 --ratio: 1X</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Row with two columns divided in 1:2 ratio -->
+        <p>
+            <span class="highlight-container">
+                <h5>Row with two columns divided in 1:2 ratio</h5>
+            </span>
+        </p>
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="demo-content">.col-xl-4 --ratio: 1X</div>
+            </div>
+            <div class="col-xl-8">
+                <div class="demo-content bg-alt">.col-xl-8 --ratio: 2X</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Row with two columns divided in 3:1 ratio -->
+        <p>
+            <span class="highlight-container">
+                <h5>Row with two columns divided in 3:1 ratio</h5>
+            </span>
+        </p>
+        <div class="row">
+            <div class="col-xl-9">
+                <div class="demo-content bg-alt">.col-xl-9 --ratio: 3X</div>
+            </div>
+            <div class="col-xl-3">
+                <div class="demo-content">.col-xl-3 --ratio: 1X</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Row with two columns divided in 1:3 ratio -->
+        <p>
+            <span class="highlight-container">
+                <h5>Row with two columns divided in 1:3 ratio</h5>
+            </span>
+        </p>
+        <div class="row">
+            <div class="col-xl-3">
+                <div class="demo-content">.col-xl-3 --ratio: 1X</div>
+            </div>
+            <div class="col-xl-9">
+                <div class="demo-content bg-alt">.col-xl-9 --ratio: 3X</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP JavaScript CDN -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+
+</html>

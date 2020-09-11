@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap List Group with Linked Items</title>
+    <!-- BOOTSTRAP CSS CDN -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <!-- Some custom styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+        .container-md {
+            background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+            border-radius: 45px;
+            padding: 35px;
+            margin-top: 100px;
+            width: 80%;
+            color: rgb(3, 0, 0);
+            text-align: center;
+
+        }
+
+        .bs-example::-webkit-scrollbar {
+            margin: 20px;
+            font-family: 'Source Sans Pro';
+            display: none;
+        }
+
+        h2 {
+            font-family: 'Dancing Script', 'cursive';
+            font-size: 45px;
+        }
+
+        h4 {
+            font-family: 'Charm', cursive;
+            font-size: 35px;
+        }
+
+        hr {
+            width: 40%;
+            background: #0c0202;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-md">
+        <p>
+            <span>
+                <h2>Bootstrap ListGroup with Linked Items</h2>
+            </span>
+        </p>
+        <hr>
+        <div class="bs-example">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">
+                    <i class="fa fa-home"></i> Home
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-camera"></i> Pictures <span
+                        class="badge badge-pill badge-primary pull-right">145</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-music"></i> Music <span class="badge badge-pill badge-primary pull-right">50</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa fa-film"></i> Videos <span class="badge badge-pill badge-primary pull-right">8</span>
+                </a>
+            </div>
+        </div>
+        <!-- BOOTSTRAP JavaScript CDN -->
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+
+</html>

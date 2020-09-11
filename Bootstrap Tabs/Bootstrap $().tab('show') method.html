@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Tab Method Options </title>
+    <!-- BOOTSTRAP CSS CDN -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Some custom styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+        .container-lg {
+            background-image: linear-gradient(75.2deg, rgba(41, 196, 255, 1) -2.5%, rgba(255, 158, 211, 1) 55%, rgba(255, 182, 138, 1) 102.3%);
+            border-radius: 45px;
+            padding: 30px;
+            margin-top: 100px;
+            width: 80%;
+            color: rgb(3, 0, 0);
+        }
+
+        .bs-example::-webkit-scrollbar {
+            margin: 20px;
+            font-family: 'Source Sans Pro';
+            display: none;
+            font-size: 30px;
+        }
+
+        h2,
+        h1,
+        h3 {
+            font-family: 'Dancing Script', 'cursive';
+            text-align: center;
+        }
+
+        h4,
+        h5,
+        h6,
+        label,
+        a {
+            font-family: 'Charm', 'cursive';
+            font-size: 35px;
+        }
+
+        hr {
+            width: 45%;
+            background: #0c0202;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#myTab li:eq(1) a").tab('show');
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container-lg">
+        <p>
+            <span>
+                <h2>Bootstrap Tab Method Options</h2>
+            </span>
+        </p>
+        <hr>
+        <div class="bs-example">
+            <ul class="nav nav-tabs" id="myTab">
+                <li><a data-toggle="tab" href="#sectionA">Section A</a></li> &nbsp;&nbsp;
+                <li><a data-toggle="tab" href="#sectionB">Section B</a></li> &nbsp;&nbsp;
+                <li class="dropdown">&nbsp;&nbsp;
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a data-toggle="tab" href="#dropdown1">Dropdown1</a></li>
+                        <li><a data-toggle="tab" href="#dropdown2">Dropdown2</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="sectionA" class="tab-pane fade in active">
+                    <h3>Section A</h3>
+                    <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher
+                        voluptate
+                        nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
+                        stumptown
+                        aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
+                        Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                </div>
+                <div id="sectionB" class="tab-pane fade">
+                    <h3>Section B</h3>
+                    <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida
+                        ut,
+                        mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit
+                        bibendum
+                        turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum
+                        convallis.
+                        Nunc facilisis leo at faucibus adipiscing.</p>
+                </div>
+                <div id="dropdown1" class="tab-pane fade">
+                    <h3>Dropdown 1</h3>
+                    <p>WInteger convallis, nulla in sollicitudin placerat, ligula enim auctor lectus, in mollis diam
+                        dolor at
+                        lorem. Sed bibendum nibh sit amet dictum feugiat. Vivamus arcu sem, cursus a feugiat ut, iaculis
+                        at
+                        erat. Donec vehicula at ligula vitae venenatis. Sed nunc nulla, vehicula non porttitor in,
+                        pharetra et
+                        dolor. Fusce nec velit velit. Pellentesque consectetur eros.</p>
+                </div>
+                <div id="dropdown2" class="tab-pane fade">
+                    <h3>Dropdown 2</h3>
+                    <p>Donec vel placerat quam, ut euismod risus. Sed a mi suscipit, elementum sem a, hendrerit velit.
+                        Donec at
+                        erat magna. Sed dignissim orci nec eleifend egestas. Donec eget mi consequat massa vestibulum
+                        laoreet.
+                        Mauris et ultrices nulla, malesuada volutpat ante. Fusce ut orci lorem. Donec molestie libero in
+                        tempus
+                        imperdiet. Cum sociis natoque penatibus et magnis dis parturient.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BOOTSTRAP JavaScript CDN -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

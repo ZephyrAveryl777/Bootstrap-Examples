@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Alert Events </title>
+    <!-- BOOTSTRAP CSS CDN -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Some custom styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+        .container-lg {
+            background-image: linear-gradient(75.2deg, rgba(41, 196, 255, 1) -2.5%, rgba(255, 158, 211, 1) 55%, rgba(255, 182, 138, 1) 102.3%);
+            border-radius: 45px;
+            padding: 30px;
+            margin-top: 100px;
+            width: 80%;
+            color: rgb(3, 0, 0);
+        }
+
+        .bs-example::-webkit-scrollbar {
+            margin: 20px;
+            font-family: 'Source Sans Pro';
+            display: none;
+            font-size: 30px;
+        }
+
+        .custom-title {
+            margin: 0;
+        }
+
+        .popover-footer {
+            padding: 6px 14px;
+            background-color: #f7f7f7;
+            border-top: 1px solid #ebebeb;
+            text-align: right;
+        }
+
+
+        h2,
+        h1,
+        h3 {
+            font-family: 'Dancing Script', 'cursive';
+            text-align: center;
+        }
+
+        h4,
+        h5,
+        h6,
+        label,
+        a,
+        .alert {
+            font-family: 'Charm', 'cursive';
+            font-size: 30px;
+        }
+
+        hr {
+            width: 45%;
+            background: #0c0202;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#myAlert").on('closed.bs.alert', function () {
+                alert("Alert message box has been closed.");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container-lg">
+        <p>
+            <span>
+                <h2>Bootstrap Alert Events</h2>
+            </span>
+        </p>
+        <hr>
+        <div class="bs-example">
+            <div id="myAlert" class="alert alert-info alert-dismissible fade show">
+                <strong>Note!</strong> This is a simple example of dismissible alert.
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

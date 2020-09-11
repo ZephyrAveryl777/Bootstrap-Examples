@@ -38,7 +38,7 @@ This section contains a whole bunch of Well organized and easy to understand exa
 1. [Bootstrap Toasts](https://github.com/ZephyrAveryl777/Bootstrap-Examples/tree/master/Bootstrap%20Toasts)
 
 
-With these;  hope a proper understanding can be made on the concepts of Bootstrap and its features.
+With these examples; hope a proper understanding can be made on the concepts of Bootstrap and its features.
 
 ### Happy Learning !! ✌🏻👍🏻
 
